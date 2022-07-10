@@ -87,7 +87,7 @@ html {
   transform: translateX(-100%);
   transition: all 0.4s;
 
-  z-index: 999;
+  z-index: 99;
 }
 
 .sidebar ul {
@@ -118,6 +118,70 @@ html {
 
 .sidebar.open-sidebar {
   transform: translateX(0%);
+}
+
+/* *************MODAL***************** */
+/* ************************************ */
+
+.modal-overlay {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-overlay.show-modal {
+  display: block;
+}
+
+.modal-content {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  max-width: 50rem;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 3rem 6rem;
+}
+
+.modal-content.show-modal {
+  display: block;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.modal-content p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.show-modal-btn {
+  display: block;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  background-color: #1d3557;
+  color: #fff;
+  border: none;
+  border-radius: 1000px;
+  cursor: pointer;
 }
 
 /* *************MEDIA QUERY***************** */
@@ -152,5 +216,13 @@ html {
   .nav-links li a {
     text-align: center;
     width: 100%;
+  }
+
+  .modal-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-content p {
+    font-size: 1.2rem;
   }
 }
