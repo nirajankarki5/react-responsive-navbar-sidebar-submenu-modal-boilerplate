@@ -48,15 +48,15 @@ html {
   display: flex;
 }
 
-.nav-links li a {
+.nav-links li .nav-link {
   text-decoration: none;
   display: block;
   color: #fff;
   font-size: 1.8rem;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
 }
 
-.nav-links li a:hover {
+.nav-links li .nav-link:hover {
   background-color: #344968;
 }
 
@@ -70,6 +70,44 @@ html {
   top: 2rem;
 
   display: none;
+}
+
+/* *************SUBMENU***************** */
+/* ************************************ */
+
+.submenu {
+  display: none;
+}
+
+.submenu ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+.nav-links li:hover .submenu {
+  display: block;
+  position: absolute;
+  width: 50rem;
+  right: 2rem;
+  padding: 2rem 4rem;
+
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  color: #1d3557;
+}
+
+.submenu .submenu-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.submenu .submenu-link:hover {
+  font-weight: 600;
 }
 
 /* *************SIDEBAR***************** */

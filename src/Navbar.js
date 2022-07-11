@@ -26,16 +26,108 @@ const Navbar = () => {
 
         <ul className={isNavDisplay ? "active nav-links" : "nav-links"}>
           <li>
-            <a href="/">Home</a>
+            <a href="/" className="nav-link">
+              Home
+            </a>
+            {/* FOR THE SUBMENU */}
+            <div className="submenu">
+              <ul>
+                <li>
+                  <a href="/" className="submenu-link">
+                    Products
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="submenu-link">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="submenu-link">
+                    Projects
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="submenu-link">
+                    Collections
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="submenu-link">
+                    Messages
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="submenu-link">
+                    Notifications
+                  </a>
+                </li>
+              </ul>
+            </div>
+            {/* FOR THE SUBMENU */}
           </li>
           <li>
-            <a href="/features">Features</a>
+            <a href="/features" className="nav-link">
+              Features
+            </a>
+            <div className="submenu">
+              <ul
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr",
+                }}
+              >
+                <li>
+                  <a href="/" className="submenu-link">
+                    Artificial Intelligence
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="submenu-link">
+                    Analytics
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="submenu-link">
+                    Business Intelligence
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="submenu-link">
+                    Insights
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
-            <a href="/blogs">Blogs</a>
+            <a href="/blogs" className="nav-link">
+              Blogs
+            </a>
           </li>
           <li>
-            <a href="/about">About</a>
+            <a href="/about" className="nav-link">
+              About
+            </a>
+            <div className="submenu">
+              <ul>
+                <li>
+                  <a href="/" className="submenu-link">
+                    Our Services
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="submenu-link">
+                    Message Us
+                  </a>
+                </li>
+                <li>
+                  <a href="/" className="submenu-link">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </nav>
