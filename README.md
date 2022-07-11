@@ -8,11 +8,11 @@
 
 ### ![screenshots](screenshots/2-sidebar.png)
 
-## Moadl
+## Modal
 
 ### ![screenshots](screenshots/3-modal.png)
 
-## Navbar
+## Responsive Navbar
 
 ### ![screenshots](screenshots/4-navbar.png)
 
